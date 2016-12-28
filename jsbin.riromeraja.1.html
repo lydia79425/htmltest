@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2016 by anonymous (http://jsbin.com/riromeraja/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Document</title>
+</head>
+<body>
+  <p>換算</p>
+ 輸入狗年齡<input type="text" id="AGE" />歲 <br><br>
+
+<input type="button" value="計算" onclick="dogToP()"/>
+<script id="jsbin-javascript">
+function dogToP(){
+  var AGE =
+  document.getElementById('AGE').value;
+
+  var f;
+
+  if (AGE <=2){
+     f= AGE*10.5
+  }
+  else{
+     f= 2*10.5+(AGE-2)*4;
+  }
+  alert("換算為人的年齡為"+ f);
+
+
+  
+}
+</script>
+</body>
+</html>
